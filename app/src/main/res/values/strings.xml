@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Danh bạ cựu sinh viên</string>
+    <string name="contact_photo">Ảnh liên hệ</string>
+    <string name="contact_name_hint">Họ và tên</string>
+    <string name="contact_phone_hint">Số điện thoại</string>
+    <string name="contact_email_hint">Email</string>
+    <string name="contact_note_hint">Ghi chú</string>
+    <string name="contact_phone_label">Điện thoại</string>
+    <string name="contact_email_label">Email</string>
+    <string name="contact_added_time_label">Ngày tạo</string>
+    <string name="contact_updated_time_label">Cập nhật</string>
+    <string name="edit_contact">Sửa</string>
+    <string name="delete_contact">Xóa</string>
+    <string name="save_contact">Lưu liên hệ</string>
+    <string name="contact_name_required">Vui lòng nhập họ và tên</string>
+    <string name="add_contact">Thêm liên hệ</string>
+    <string name="empty_contacts">Chưa có liên hệ. Nhấn nút + để thêm.</string>
+    <string name="search_contacts">Tìm liên hệ</string>
+    <string name="delete_all_contacts">Xóa tất cả</string>
+    <string name="delete_contact_confirm">Bạn có muốn xóa liên hệ này không?</string>
+    <string name="delete_all_confirm">Bạn có muốn xóa tất cả liên hệ không?</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="save">Lưu</string>
+    <string name="no_search_results">Không tìm thấy liên hệ phù hợp.</string>
+    <string name="not_provided">Chưa cung cấp</string>
+</resources>
