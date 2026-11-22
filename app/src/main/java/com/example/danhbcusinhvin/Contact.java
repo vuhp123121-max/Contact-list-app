@@ -47,3 +47,4 @@ final class Contact {
     void setId(long id) { this.id = id; }
     void setClassID(long classID) { this.classID = classID; }
 }
+

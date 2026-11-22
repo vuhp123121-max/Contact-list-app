@@ -15,7 +15,9 @@ public class AddEditContact extends AppCompatActivity {
     static final String EXTRA_NAME = "contact_name";
     static final String EXTRA_PHONE = "contact_phone";
     static final String EXTRA_EMAIL = "contact_email";
-    static final String EXTRA_NOTE = "contact_note";
+    static final String EXTRA_WORKPLACE = "contact_workplace";
+
+    static final String EXTRA_CLASS_ID = "contact_classID";
     static final String EXTRA_ADDED_TIME = "contact_added_time";
     static final String EXTRA_UPDATED_TIME = "contact_updated_time";
     static final String EXTRA_INDEX = "contact_index";
@@ -28,7 +30,8 @@ public class AddEditContact extends AppCompatActivity {
         EditText nameInput = findViewById(R.id.nameEt);
         EditText phoneInput = findViewById(R.id.phoneEt);
         EditText emailInput = findViewById(R.id.emailEt);
-        EditText noteInput = findViewById(R.id.noteEt);
+        EditText workplaceInput = findViewById(R.id.workplaceEt);
+        EditText classIDInput = findViewById(R.id.class_IDET);
         FloatingActionButton saveButton = findViewById(R.id.fab);
         int index = getIntent().getIntExtra(EXTRA_INDEX, -1);
 
@@ -37,7 +40,8 @@ public class AddEditContact extends AppCompatActivity {
             nameInput.setText(getIntent().getStringExtra(EXTRA_NAME));
             phoneInput.setText(getIntent().getStringExtra(EXTRA_PHONE));
             emailInput.setText(getIntent().getStringExtra(EXTRA_EMAIL));
-            noteInput.setText(getIntent().getStringExtra(EXTRA_NOTE));
+            workplaceInput.setText(getIntent().getStringExtra(EXTRA_WORKPLACE));
+            classIDInput.setText(getIntent().getStringExtra(EXTRA_CLASS_ID));
         } else {
             setTitle(R.string.add_contact);
         }
@@ -55,7 +59,8 @@ public class AddEditContact extends AppCompatActivity {
             result.putExtra(EXTRA_NAME, name);
             result.putExtra(EXTRA_PHONE, phoneInput.getText().toString().trim());
             result.putExtra(EXTRA_EMAIL, emailInput.getText().toString().trim());
-            result.putExtra(EXTRA_NOTE, noteInput.getText().toString().trim());
+            result.putExtra(EXTRA_WORKPLACE, workplaceInput.getText().toString().trim());
+            result.putExtra(EXTRA_CLASS_ID, classIDInput.getText().toString().trim());
             result.putExtra(EXTRA_ADDED_TIME, getIntent().getStringExtra(EXTRA_ADDED_TIME));
             result.putExtra(EXTRA_UPDATED_TIME, DateFormat.format("yyyy-MM-dd HH:mm", new Date()).toString());
             setResult(RESULT_OK, result);

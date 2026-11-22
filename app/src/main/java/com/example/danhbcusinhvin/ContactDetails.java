@@ -58,7 +58,8 @@ public class ContactDetails extends AppCompatActivity {
         setText(R.id.nameTv, intent.getStringExtra(AddEditContact.EXTRA_NAME));
         setText(R.id.phoneTv, intent.getStringExtra(AddEditContact.EXTRA_PHONE));
         setText(R.id.emailTv, intent.getStringExtra(AddEditContact.EXTRA_EMAIL));
-        setText(R.id.noteTv, intent.getStringExtra(AddEditContact.EXTRA_NOTE));
+        setText(R.id.WorkplaceTv, intent.getStringExtra(AddEditContact.EXTRA_WORKPLACE));
+        setText(R.id.ClassIDtv, intent.getStringExtra(AddEditContact.EXTRA_CLASS_ID));
         setText(R.id.addedTimeTv, intent.getStringExtra(AddEditContact.EXTRA_ADDED_TIME));
         setText(R.id.updatedTimeTv, intent.getStringExtra(AddEditContact.EXTRA_UPDATED_TIME));
     }

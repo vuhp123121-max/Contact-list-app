@@ -127,21 +127,44 @@
                     android:textSize="15sp" />
 
                 <EditText
-                    android:id="@+id/noteEt"
+                    android:id="@+id/workplaceEt"
                     android:layout_width="match_parent"
-                    android:layout_height="112dp"
+                    android:layout_height="56dp"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/background_input_field"
-                    android:drawableStart="@drawable/ic_baseline_note_24"
+                    android:drawableStart="@drawable/ic_baseline_workplace_24"
                     android:drawablePadding="12dp"
                     android:drawableTint="@color/colorTextPrimary"
-                    android:gravity="top|start"
-                    android:hint="@string/contact_note_hint"
-                    android:inputType="textCapSentences|textMultiLine"
-                    android:padding="14dp"
+                    android:hint="Nơi Công Tác"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:singleLine="true"
                     android:textColor="@color/colorTextMain"
                     android:textColorHint="@color/colorTextMuted"
                     android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/class_IDET"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/background_input_field"
+                    android:drawableStart="@drawable/ic_baseline_class_24"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@color/colorTextPrimary"
+                    android:hint="Mã Lớp"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTextMain"
+                    android:textColorHint="@color/colorTextMuted"
+                    android:textSize="15sp" />
+
+
+
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </ScrollView>
@@ -159,4 +182,5 @@
         app:backgroundTint="@color/colorTextPrimary"
         app:pressedTranslationZ="10dp"
         app:tint="@color/white" />
+
 </RelativeLayout>

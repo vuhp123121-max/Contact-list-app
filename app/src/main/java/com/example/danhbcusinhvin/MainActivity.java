@@ -101,7 +101,8 @@ public class MainActivity extends AppCompatActivity implements ContactAdapter.Li
         intent.putExtra(AddEditContact.EXTRA_NAME, contact.name);
         intent.putExtra(AddEditContact.EXTRA_PHONE, contact.phone);
         intent.putExtra(AddEditContact.EXTRA_EMAIL, contact.email);
-        intent.putExtra(AddEditContact.EXTRA_NOTE, contact.note);
+        intent.putExtra(AddEditContact.EXTRA_WORKPLACE, contact.workplace);
+        intent.putExtra(AddEditContact.EXTRA_CLASS_ID, contact.classID);
         intent.putExtra(AddEditContact.EXTRA_ADDED_TIME, contact.addedTime);
         intent.putExtra(AddEditContact.EXTRA_UPDATED_TIME, contact.updatedTime);
     }
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements ContactAdapter.Li
                     name,
                     valueOrEmpty(data.getStringExtra(AddEditContact.EXTRA_PHONE)),
                     valueOrEmpty(data.getStringExtra(AddEditContact.EXTRA_EMAIL)),
-                    valueOrEmpty(data.getStringExtra(AddEditContact.EXTRA_NOTE)),
+                    valueOrEmpty(data.getStringExtra(AddEditContact.EXTRA_WORKPLACE)),
                     valueOrEmpty(added),
                     valueOrEmpty(updated));
             if (index >= 0 && index < contacts.size()) contacts.set(index, contact);

@@ -73,7 +73,7 @@
                     android:letterSpacing="0.12" />
 
                 <TextView
-                    android:id="@+id/noteTv"
+                    android:id="@+id/class_IDET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
@@ -82,8 +82,10 @@
                     android:minHeight="48dp"
                     android:padding="14dp"
                     android:textColor="@color/colorTextMain"
-                    android:textSize="14sp"
-                    tools:text="Ghi chú về cựu sinh viên" />
+                    android:textSize="20sp"
+                    tools:fontFamily="sans-serif-black"
+                    tools:text="KPM64DH"
+                    tools:textColor="#673AB7" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -153,6 +155,51 @@
                     android:textColor="@color/colorTextMain"
                     android:textSize="16sp"
                     tools:text="an.nguyen@example.com" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/colorDivider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nơi công tác"
+                    android:textColor="@color/colorTextMuted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/WorkplaceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorTextMain"
+                    android:textSize="16sp"
+                    tools:text="Công Ty An Lão" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/colorDivider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã Lớp"
+                    android:textColor="@color/colorTextMuted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ClassIDtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorTextMain"
+                    android:textSize="16sp"
+                    tools:text="KPM64DH" />
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
